@@ -8,11 +8,13 @@ var up, down, left, right, shoot, reset, leave;
 
 reset = keyboard_check(ord("R"));
 leave = keyboard_check(vk_escape);
-up =	keyboard_check(vk_up);
-down =	keyboard_check(vk_down);
-left =	keyboard_check(vk_left);
-right =	keyboard_check(vk_right);
-shoot =	keyboard_check(ord("F"));
+up =	keyboard_check(ord("W"));
+down =	keyboard_check(ord("S"));
+left =	keyboard_check(ord("A"));
+right =	keyboard_check(ord("D"));
+shoot =	mouse_check_button(mb_left);
+
+image_angle = point_direction(x, y, mouse_x, mouse_y);
 
 // Reset and Exit
 if reset {
@@ -42,11 +44,10 @@ if can_shoot{
 	if shoot{
 		var inst = instance_create_layer(x, y, "Instances", o_bullet);
 		with(inst) {
-			direction = image_angle;
+			direction = point_direction(x, y, mouse_x, mouse_y);;
 		}
 		can_shoot = false;
 		alarm[0] = 10;
 	}
 }
 
-image_angle = point_direction(x, y, mouse_x, mouse_y);
