@@ -44,7 +44,8 @@ if can_shoot{
 	if shoot{
 		var inst = instance_create_layer(x, y, "Instances", o_bullet);
 		with(inst) {
-			direction = point_direction(x, y, mouse_x, mouse_y);;
+			direction = point_direction(x, y, mouse_x, mouse_y);
+			image_angle = point_direction(x, y, mouse_x, mouse_y);
 		}
 		can_shoot = false;
 		alarm[0] = 10;
