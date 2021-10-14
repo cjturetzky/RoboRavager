@@ -4,7 +4,7 @@ x = clamp(x, 8, room_width-8);
 y = clamp(y, 8, 256-8);
 
 // Controls
-var up, down, left, right, shoot, reset, leave, can_be_damaged;
+var up, down, left, right, shoot, reset, leave;
 
 reset = keyboard_check(ord("R"));
 leave = keyboard_check(vk_escape);
