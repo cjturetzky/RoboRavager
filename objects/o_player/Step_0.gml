@@ -4,7 +4,7 @@ x = clamp(x, 8, room_width-8);
 y = clamp(y, 8, 256-8);
 
 // Controls
-var up, down, left, right, shoot, reset, leave;
+var up, down, left, right, shoot, reset, leave, can_be_damaged;
 
 reset = keyboard_check(ord("R"));
 leave = keyboard_check(vk_escape);
@@ -50,5 +50,9 @@ if can_shoot{
 		can_shoot = false;
 		alarm[0] = 10;
 	}
+}
+
+if (hp_ <= 0){
+	instance_destroy();
 }
 
