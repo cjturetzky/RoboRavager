@@ -53,6 +53,6 @@ if can_shoot{
 }
 
 if (hp_ <= 0){
-	instance_destroy();
+	game_restart();
 }
 
