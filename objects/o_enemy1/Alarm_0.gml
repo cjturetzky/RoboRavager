@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-speed = 6;
+image_blend = c_white;
