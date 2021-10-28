@@ -48,7 +48,7 @@ if can_shoot{
 			image_angle = point_direction(x, y, mouse_x, mouse_y);
 		}
 		can_shoot = false;
-		alarm[0] = 10;
+		alarm[0] = fire_rate;
 	}
 }
 
