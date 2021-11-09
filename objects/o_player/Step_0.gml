@@ -53,6 +53,6 @@ if can_shoot{
 }
 
 if (hp_ <= 0){
-	game_restart();
+	room_goto_previous();
 }
 
