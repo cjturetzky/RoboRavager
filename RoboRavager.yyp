@@ -2,8 +2,10 @@
   "resources": [
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},"order":1,},
     {"id":{"name":"o_startbutton","path":"objects/o_startbutton/o_startbutton.yy",},"order":7,},
+    {"id":{"name":"o_healthup","path":"objects/o_healthup/o_healthup.yy",},"order":9,},
     {"id":{"name":"o_enemyspawn","path":"objects/o_enemyspawn/o_enemyspawn.yy",},"order":4,},
     {"id":{"name":"o_powerup","path":"objects/o_powerup/o_powerup.yy",},"order":5,},
+    {"id":{"name":"s_healthup","path":"sprites/s_healthup/s_healthup.yy",},"order":7,},
     {"id":{"name":"o_powerupspawn","path":"objects/o_powerupspawn/o_powerupspawn.yy",},"order":6,},
     {"id":{"name":"s_startbutton","path":"sprites/s_startbutton/s_startbutton.yy",},"order":4,},
     {"id":{"name":"s_powerup","path":"sprites/s_powerup/s_powerup.yy",},"order":3,},
