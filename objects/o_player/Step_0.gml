@@ -55,4 +55,3 @@ if can_shoot{
 if (hp_ <= 0){
 	room_goto_previous();
 }
-
