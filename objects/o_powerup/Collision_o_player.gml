@@ -5,4 +5,4 @@ with(other){
 	alarm[2] = 1000;
 }
 instance_destroy();
-o_powerupspawn.alarm[0] = 1000;
+o_powerupspawn.alarm[0] = 1500;

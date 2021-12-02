@@ -3,7 +3,7 @@
 with(other){
 	if(hp_ < 3){
 		hp_++;
-		o_powerupspawn.alarm[0] = 1000;
+		o_powerupspawn.alarm[0] = 1500;
 	}
 }
 instance_destroy();
