@@ -1,7 +1,7 @@
 /// @description Controls for player
 // Clamp
 x = clamp(x, 8, room_width-8);
-y = clamp(y, 8, 256-8);
+y = clamp(y, 8, 512-8);
 
 // Controls
 var up, down, left, right, shoot, reset, leave;

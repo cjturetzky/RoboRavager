@@ -7,5 +7,5 @@ if(spawn){
 		direction = point_direction(x, y, o_player.x, o_player.y);
 	}
 	spawn = false;
-	alarm[0] = random_range(100, 300);
+	alarm[0] = random_range(300, 500);
 }
